@@ -197,7 +197,7 @@ body nav a.logo .logo-with,body nav a.logo .logo-simon{color:var(--blue,#2196F3)
 body nav a.logo:focus-visible{outline:3px solid #64B5F6;outline-offset:3px}
 body nav ul.nav-links{display:flex !important;align-items:stretch;gap:20px;list-style:none;margin:0 20px;padding:0;flex:1 1 auto;min-width:0;justify-content:center;justify-content:safe center;position:static;transform:none;left:auto;right:auto}
 body nav ul.nav-links a{padding:0}
-@media (min-width:1280px){
+@media (min-width:1200px){
 body nav{position:sticky}
 body nav ul.nav-links{position:absolute;left:50%;transform:translateX(-50%);margin:0;flex:0 0 auto;width:auto;max-width:calc(100% - 580px)}
 }
@@ -221,7 +221,7 @@ body nav .nav-menu a[aria-current="page"]{box-shadow:inset 4px 0 0 var(--blue,#2
 body nav .nav-menu a:last-child{border-bottom:0}
 body nav .hamburger{display:none !important}
 body .mobile-menu{display:none !important}
-@media (max-width:1199px){
+@media (max-width:1119px){
 body nav{flex-wrap:nowrap;min-height:70px;gap:0;row-gap:0;justify-content:flex-start}
 body nav ul.nav-links{display:none !important}
 body nav .nav-burger{display:flex}
@@ -248,6 +248,15 @@ body nav .nav-burger{margin-left:2px;padding:10px 8px}
 @media (prefers-reduced-motion:reduce){.reveal,.reveal.visible{opacity:1!important;transform:none!important;transition:none!important}}
 </style><noscript><style>.reveal{opacity:1!important;transform:none!important;transition:none!important}</style></noscript>
 
+<style>
+/* Price type labels, Option A (price_labels.py, via pricing(labels=True)). */
+.opt-private{--opt:#1a1a2e}.opt-semi_private{--opt:#1976D2}.opt-group{--opt:#00796B}.opt-mobile{--opt:#4b5563}.opt-trial{--opt:#C2410C}
+.opt-a{border-top:4px solid var(--opt)}
+.opt-tag{display:inline-flex;align-items:center;gap:7px;margin:0 0 14px;padding:6px 12px;
+  border-radius:999px;background:var(--opt);color:#fff;font-size:12px;font-weight:600;
+  letter-spacing:1.5px;text-transform:uppercase}
+.opt-tag svg{width:16px;height:16px;flex:none}
+</style>
 <link rel="canonical" href="https://kickboxingwithsimon.com/kickboxing/">
 <script type="application/ld+json">
 {
@@ -304,7 +313,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <span class="logo-kick">KICKBOXING</span>
     <span class="logo-with">with Simon</span>
   </a>
-  <ul class="nav-links"><li><a href="/kickboxing/" aria-current="page">Kickboxing</a></li><li><a href="/boxing/">Boxing</a></li><li><a href="/womens-kickboxing/">Girls-Only Classes</a></li><li><a href="/personal-training/">Personal Training</a></li><li><a href="/pricing/">Pricing</a></li><li><a href="/#services">Services</a></li><li><a href="/#about">About</a></li><li><a href="/#contact">Contact</a></li></ul><button class="nav-burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-menu"><span></span><span></span><span></span></button><div class="nav-menu" id="nav-menu" hidden><a href="/kickboxing/" aria-current="page">Kickboxing</a><a href="/boxing/">Boxing</a><a href="/womens-kickboxing/">Girls-Only Classes</a><a href="/personal-training/">Personal Training</a><a href="/pricing/">Pricing</a><a href="/#services">Services</a><a href="/#about">About</a><a href="/#contact">Contact</a></div>
+  <ul class="nav-links"><li><a href="/kickboxing/" aria-current="page">Kickboxing</a></li><li><a href="/womens-kickboxing/">Girls-Only Classes</a></li><li><a href="/personal-training/">Personal Training</a></li><li><a href="/pricing/">Pricing</a></li><li><a href="/#services">Services</a></li><li><a href="/#about">About</a></li><li><a href="/#contact">Contact</a></li></ul><button class="nav-burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-menu"><span></span><span></span><span></span></button><div class="nav-menu" id="nav-menu" hidden><a href="/kickboxing/" aria-current="page">Kickboxing</a><a href="/womens-kickboxing/">Girls-Only Classes</a><a href="/personal-training/">Personal Training</a><a href="/pricing/">Pricing</a><a href="/#services">Services</a><a href="/#about">About</a><a href="/#contact">Contact</a></div>
 <script>
 (function () {
   var b = document.querySelector('.nav-burger');
@@ -323,7 +332,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     if (e.key === 'Escape' && !m.hidden) { set(false); b.focus(); }
   });
   window.addEventListener('resize', function () {
-    if (window.innerWidth >= 1200 && !m.hidden) set(false);
+    if (window.innerWidth >= 1120 && !m.hidden) set(false);
   });
 })();
 </script>
@@ -498,12 +507,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <h2 class="reveal reveal-delay-1">Try it first, decide after</h2>
     <p class="reveal reveal-delay-2">The first session costs nothing and there is no card required to book it. Prices below are what training looks like if you decide to keep going.</p>
     <div class="price-row">
-      <div class="price reveal"><div class="amt">Free</div><div class="lbl">First trial session</div><p class="note">One hour with Simon, all gear included. No card required and no commitment.</p></div>
-      <div class="price reveal reveal-delay-1"><div class="amt">$120</div><div class="lbl">1:1 private, per session</div><p class="note">60 minutes, one on one, tailored to your level. Book anytime, no commitment.</p><p class="note"><strong>Includes your own training footage analysis so you can rewatch your lesson at any time.</strong></p></div>
-      <div class="price reveal reveal-delay-2"><div class="amt">$400</div><div class="lbl">1:1 private, 4-pack</div><p class="note">$100 a session. Progressive plan, measurement tracking, priority scheduling, and a welcome gift package valued at $50.</p><p class="note"><strong>Includes your own training footage analysis so you can rewatch your lesson at any time.</strong></p></div>
-      <div class="price reveal reveal-delay-3"><div class="amt">$170</div><div class="lbl">2:1 semi private, per session</div><p class="note">$85 each. The same coaching, shared between two of you, for a full hour.</p><p class="note"><strong>Includes two individual training footage analyses so you can rewatch your lesson at any time.</strong></p></div>
-      <div class="price reveal"><div class="amt">$600</div><div class="lbl">2:1 semi private, 4-pack</div><p class="note">$75 each per session. Four one-hour sessions, shared between two of you.</p><p class="note"><strong>Includes two individual training footage analyses so you can rewatch your lesson at any time.</strong></p></div>
-      <div class="price reveal reveal-delay-1"><div class="amt">$30</div><div class="lbl">Group class, per person</div><p class="note">Beginner friendly, all levels, all equipment provided. Sunday classes at the Lidcombe gym.</p></div>
+      <div class="price opt-a opt-trial reveal"><p class="opt-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><span>Free trial</span></p><div class="amt">Free</div><div class="lbl">First session</div><p class="note">One hour with Simon, all gear included. No card required and no commitment.</p></div>
+      <div class="price opt-a opt-private reveal reveal-delay-1"><p class="opt-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="7" r="4"/><path d="M4 21v-2a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v2"/></svg><span>Private · 1:1</span></p><div class="amt">$120</div><div class="lbl">Single session</div><p class="note">60 minutes, one on one, tailored to your level. Book anytime, no commitment.</p><p class="note"><strong>Includes your own training footage analysis so you can rewatch your lesson at any time.</strong></p></div>
+      <div class="price opt-a opt-private reveal reveal-delay-2"><p class="opt-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="7" r="4"/><path d="M4 21v-2a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v2"/></svg><span>Private · 1:1</span></p><div class="amt">$400</div><div class="lbl">4-pack</div><p class="note">$100 a session. Progressive plan, measurement tracking, priority scheduling, and a welcome gift package valued at $50.</p><p class="note"><strong>Includes your own training footage analysis so you can rewatch your lesson at any time.</strong></p></div>
+      <div class="price opt-a opt-semi_private reveal reveal-delay-3"><p class="opt-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="7" r="4"/><path d="M1 21v-2a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v2"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg><span>Semi-Private · 2:1</span></p><div class="amt">$170</div><div class="lbl">Single session</div><p class="note">$85 each. The same coaching, shared between two of you, for a full hour.</p><p class="note"><strong>Includes two individual training footage analyses so you can rewatch your lesson at any time.</strong></p></div>
+      <div class="price opt-a opt-semi_private reveal"><p class="opt-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="7" r="4"/><path d="M1 21v-2a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v2"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg><span>Semi-Private · 2:1</span></p><div class="amt">$600</div><div class="lbl">4-pack</div><p class="note">$75 each per session. Four one-hour sessions, shared between two of you.</p><p class="note"><strong>Includes two individual training footage analyses so you can rewatch your lesson at any time.</strong></p></div>
+      <div class="price opt-a opt-group reveal reveal-delay-1"><p class="opt-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="6" r="3"/><circle cx="4.5" cy="9" r="2.5"/><circle cx="19.5" cy="9" r="2.5"/><path d="M7 21v-2a5 5 0 0 1 10 0v2"/><path d="M1 21v-1.5a3.5 3.5 0 0 1 4.5-3.35"/><path d="M23 21v-1.5a3.5 3.5 0 0 0-4.5-3.35"/></svg><span>Group Class</span></p><div class="amt">$30</div><div class="lbl">Per class</div><p class="note">Beginner friendly, all levels, all equipment provided. Sunday classes at the Lidcombe gym.</p></div>
     </div>
   </div>
 </section>

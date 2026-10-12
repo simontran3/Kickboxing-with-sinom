@@ -197,7 +197,7 @@ body nav a.logo .logo-with,body nav a.logo .logo-simon{color:var(--blue,#2196F3)
 body nav a.logo:focus-visible{outline:3px solid #64B5F6;outline-offset:3px}
 body nav ul.nav-links{display:flex !important;align-items:stretch;gap:20px;list-style:none;margin:0 20px;padding:0;flex:1 1 auto;min-width:0;justify-content:center;justify-content:safe center;position:static;transform:none;left:auto;right:auto}
 body nav ul.nav-links a{padding:0}
-@media (min-width:1280px){
+@media (min-width:1200px){
 body nav{position:sticky}
 body nav ul.nav-links{position:absolute;left:50%;transform:translateX(-50%);margin:0;flex:0 0 auto;width:auto;max-width:calc(100% - 580px)}
 }
@@ -221,7 +221,7 @@ body nav .nav-menu a[aria-current="page"]{box-shadow:inset 4px 0 0 var(--blue,#2
 body nav .nav-menu a:last-child{border-bottom:0}
 body nav .hamburger{display:none !important}
 body .mobile-menu{display:none !important}
-@media (max-width:1199px){
+@media (max-width:1119px){
 body nav{flex-wrap:nowrap;min-height:70px;gap:0;row-gap:0;justify-content:flex-start}
 body nav ul.nav-links{display:none !important}
 body nav .nav-burger{display:flex}
@@ -304,7 +304,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <span class="logo-kick">KICKBOXING</span>
     <span class="logo-with">with Simon</span>
   </a>
-  <ul class="nav-links"><li><a href="/kickboxing/">Kickboxing</a></li><li><a href="/boxing/">Boxing</a></li><li><a href="/womens-kickboxing/" aria-current="page">Girls-Only Classes</a></li><li><a href="/personal-training/">Personal Training</a></li><li><a href="/pricing/">Pricing</a></li><li><a href="/#services">Services</a></li><li><a href="/#about">About</a></li><li><a href="/#contact">Contact</a></li></ul><button class="nav-burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-menu"><span></span><span></span><span></span></button><div class="nav-menu" id="nav-menu" hidden><a href="/kickboxing/">Kickboxing</a><a href="/boxing/">Boxing</a><a href="/womens-kickboxing/" aria-current="page">Girls-Only Classes</a><a href="/personal-training/">Personal Training</a><a href="/pricing/">Pricing</a><a href="/#services">Services</a><a href="/#about">About</a><a href="/#contact">Contact</a></div>
+  <ul class="nav-links"><li><a href="/kickboxing/">Kickboxing</a></li><li><a href="/womens-kickboxing/" aria-current="page">Girls-Only Classes</a></li><li><a href="/personal-training/">Personal Training</a></li><li><a href="/pricing/">Pricing</a></li><li><a href="/#services">Services</a></li><li><a href="/#about">About</a></li><li><a href="/#contact">Contact</a></li></ul><button class="nav-burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-menu"><span></span><span></span><span></span></button><div class="nav-menu" id="nav-menu" hidden><a href="/kickboxing/">Kickboxing</a><a href="/womens-kickboxing/" aria-current="page">Girls-Only Classes</a><a href="/personal-training/">Personal Training</a><a href="/pricing/">Pricing</a><a href="/#services">Services</a><a href="/#about">About</a><a href="/#contact">Contact</a></div>
 <script>
 (function () {
   var b = document.querySelector('.nav-burger');
@@ -323,7 +323,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     if (e.key === 'Escape' && !m.hidden) { set(false); b.focus(); }
   });
   window.addEventListener('resize', function () {
-    if (window.innerWidth >= 1200 && !m.hidden) set(false);
+    if (window.innerWidth >= 1120 && !m.hidden) set(false);
   });
 })();
 </script>
